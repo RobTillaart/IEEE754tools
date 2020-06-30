@@ -1,0 +1,21 @@
+{
+  "name": "IEEE754tools",
+  "keywords": "IEEE,754,float,double,algorithms",
+  "description": "Fast helper functions for IEEE 754 floats.",
+  "authors":
+  [
+    {
+      "name": "Rob Tillaart",
+      "email": "Rob.Tillaart@gmail.com",
+      "maintainer": true
+    }
+  ],
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/RobTillaart/IEEE754tools.git"
+  },
+  "version":"0.2.0",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
