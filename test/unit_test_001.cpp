@@ -103,7 +103,7 @@ unittest(test_all)
   for (int i = 0; i < 20; i++)
   {
     fprintf(stderr, "%d\t%f\t", i, f);
-    assertEqualFloat(f, IEEE_POW2(2, i), 0.0001);
+    assertEqualFloat(f, IEEE_POW2(1, i), 0.0001);
     f *= 2;
   }
 
@@ -112,7 +112,7 @@ unittest(test_all)
   for (int i = 0; i < 20; i++)
   {
     fprintf(stderr, "%d\t%f\t", i, f);
-    assertEqualFloat(f, IEEE_POW2fast(2, i), 0.0001);
+    assertEqualFloat(f, IEEE_POW2fast(1, i), 0.0001);
     f *= 2;
   }
 
