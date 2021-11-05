@@ -2,7 +2,7 @@
 //
 //    FILE: IEEE754tools.h
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.2.1
+// VERSION: 0.2.2
 // PURPOSE: manipulate IEEE754 float numbers fast
 //     URL: https://github.com/RobTillaart/IEEE754tools.git
 //
@@ -15,10 +15,13 @@
 //  0.1.03  2013-09-10  renamed IEEE_Sign IEEE_Exponent
 //  0.2.0   2020-06-30  own repo + some refactor...
 //  0.2.1   2020-12-30  arduino-CI
+//  0.2.2   2021-11-05  update Arduino-CI, badges, readme.md
+//                      some testing on ESP32 (no fixing)
 
 #include "Arduino.h"
 
-#define IEEE754_VERSION "0.2.1"
+#define IEEE754_VERSION         (F("0.2.1"))
+
 
 // (un)comment lines to configure functionality / size
 //#define IEEE754_ENABLE_MSB   // +78 bytes

@@ -25,15 +25,24 @@ http://en.wikipedia.org/wiki/Single-precision_floating-point_format
 ## WARNING
 
 - If you don't need micro-second speed ups **do not use** these code snippets.
-- code is experimental, so use with care.
-- only tested on UNO
+- code is experimental, so use with care - after testing 
+
+
+## Test results examples 
+
+updated for 0.2.2
+
+| example      |  UNO   |  ESP32  |
+|:-------------|:------:|:-------:|
+| fastnegate   |   Y    |    Y    |
+| float2Double |   Y    |    N    | 
 
 
 ## Future
 
-- investigate other speed ups
-- test on ESP32
 - test with double
+- test on ESP23
+- investigate other speed ups
 - write more examples
 - example binary transfer over Serial
 - example binary transfer over Ethernet
