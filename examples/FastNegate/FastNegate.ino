@@ -3,6 +3,7 @@
 //  AUTHOR: Rob dot Tillaart at gmail dot com
 // PURPOSE: Fast negate for floating points
 
+#include "IEEE754tools.h"
 
 volatile float zz = 100;
 volatile int x = 3;
