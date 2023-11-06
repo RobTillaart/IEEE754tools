@@ -2,7 +2,6 @@
 //    FILE: FastNegate.ino
 //  AUTHOR: Rob dot Tillaart at gmail dot com
 // PURPOSE: Fast negate for floating points
-//
 
 
 volatile float zz = 100;
@@ -14,7 +13,10 @@ uint32_t start, duration1, duration2;
 void setup()
 {
   Serial.begin(115200);
+  Serial.println();
   Serial.println(__FILE__);
+  Serial.print("IEEE754_LIB_VERSION: ");
+  Serial.println(IEEE754_LIB_VERSION);
   Serial.println();
 
   test_negfabs();
@@ -32,7 +34,7 @@ void test_negfabs()
   start = micros();
   for (int i = 0; i < 30000; i++)
   {
-    *(((byte*) &zz) + 3) |= 0x80;   // Force negative  == -fabs(zz);
+    *(((byte*) &zz) + 3) |= 0x80;   //  Force negative  == -fabs(zz);
   }
   duration1 = micros() - start;
   Serial.print("TIME : ");
@@ -66,7 +68,7 @@ void test_fabs()
   start = micros();
   for (int i = 0; i < 30000; i++)
   {
-    *(((byte*) &zz) + 3) &= 0x7F;     // force positive  == fabs(zz);
+    *(((byte*) &zz) + 3) &= 0x7F;     //  force positive  == fabs(zz);
   }
   duration1 = micros() - start;
   Serial.print("TIME : ");
@@ -131,7 +133,7 @@ void test_less_zero()
   start = micros();
   for (int i = 0; i < 30000; i++)
   {
-    if ( *(((byte*) &zz) + 3) & 0x80) x = 2; // equals if (zz < 0);
+    if ( *(((byte*) &zz) + 3) & 0x80) x = 2;  //  equals if (zz < 0);
   }
   duration1 = micros() - start;
   Serial.print("TIME : ");
@@ -188,5 +190,5 @@ void loop()
 }
 
 
-// -- END OF FILE --
+//  -- END OF FILE --
 
