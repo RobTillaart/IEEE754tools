@@ -16,7 +16,7 @@
 
 
 //  (un)comment lines to configure functionality / size
-//  #define IEEE754_ENABLE_MSB   // +78 bytes
+#define IEEE754_ENABLE_MSB   // +78 bytes
 
 
 //  IEEE754 float layout;
