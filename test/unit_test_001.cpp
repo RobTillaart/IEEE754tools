@@ -75,10 +75,10 @@ unittest(test_all)
   // fprintf(stderr, "IEEE_Sign\n");
   // assertTrue(IEEE_Sign(PI));
   // assertTrue(IEEE_Sign(-PI));
-  // 
+  //
   // fprintf(stderr, "IEEE_Exponent\n");
   // assertTrue(IEEE_Exponent(PI));
-  // 
+  //
   // fprintf(stderr, "IEEE_Mantisse\n");
   // assertTrue(IEEE_Mantisse(PI));
 
@@ -91,7 +91,7 @@ unittest(test_all)
   //   assertEqualFloat(f, IEEE_POW2(1, i), 0.0001);
   //   f *= 2;
   // }
-  // 
+  //
   // fprintf(stderr, "IEEE_POW2fast\n");
   // f = 2;
   // for (int i = 0; i < 20; i++)
@@ -107,5 +107,5 @@ unittest(test_all)
 unittest_main()
 
 
-//  -- END OF FILE -- 
+//  -- END OF FILE --
 
