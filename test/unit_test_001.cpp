@@ -54,12 +54,12 @@ unittest(test_all)
   uint8_t ar[8];
   float p = PI;
   float2DoublePacked(p, ar);
-  for (int i = 0; i < 8; i++)
-  {
-    fprintf(stderr, "%0x ", ar[i]);
-  }
-  fprintf(stderr, "\n");
-  float q = doublePacked2Float(ar);
+  // for (int i = 0; i < 8; i++)
+  // {
+    // fprintf(stderr, "%0x ", ar[i]);
+  // }
+  // fprintf(stderr, "\n");
+  float q = doublePacked2Float(ar, MSBFIRST);
   assertEqualFloat(p, q, 0.0001);
 
   fprintf(stderr, "IEEE_NAN %f\n", 0.0 / 0.0);
